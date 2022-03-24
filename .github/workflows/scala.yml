@@ -27,7 +27,7 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: target/scala-2.13/scala-binance-api_2.13-0.0.2-SNAPSHOT.jar 
-        asset_name: mything
+        asset_name: scala-binance-api_2.13-0.0.2-SNAPSHOT.jar
         tag: ${{ github.ref }}
         overwrite: true
         body: "This is my release text"
