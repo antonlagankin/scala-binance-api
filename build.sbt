@@ -1,4 +1,4 @@
-ThisBuild / organization := "io.github.patceev"
+ThisBuild / organization := "io.github.lagankin"
 ThisBuild / organizationName := "github"
 ThisBuild / organizationHomepage := Some(url("https://github.io"))
 
@@ -11,10 +11,10 @@ ThisBuild / scmInfo := Some(
 
 ThisBuild / developers := List(
   Developer(
-    id = "patceev",
-    name = "Patceev Andrey",
-    email = "patceev@protonmail.com",
-    url = url("https://patceev.github.io")
+    id = "Lagankin",
+    name = "Anton Lagankin",
+    email = "",
+    url = url("https://lagankin.github.io")
   )
 )
 
