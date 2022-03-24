@@ -4,8 +4,8 @@ ThisBuild / organizationHomepage := Some(url("https://github.io"))
 
 ThisBuild / scmInfo := Some(
   ScmInfo(
-    url("https://github.com/patceev/scala-binance-api"),
-    "scm:git@github.com:patceev/scala-binance-api.git"
+    url("https://github.com/antonlagankin/scala-binance-api"),
+    "scm:git@github.com:antonlagankin/scala-binance-api.git"
   )
 )
 
@@ -20,7 +20,7 @@ ThisBuild / developers := List(
 
 ThisBuild / description := "Asynchronous & Easy to use wrapper for Binance API"
 ThisBuild / licenses := List("Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt"))
-ThisBuild / homepage := Some(url("https://github.com/patceev/scala-binance-api"))
+ThisBuild / homepage := Some(url("https://github.com/antonlagankin/scala-binance-api"))
 
 ThisBuild / pomIncludeRepository := { _ => false }
 ThisBuild / publishTo := {
@@ -33,18 +33,18 @@ ThisBuild / publishMavenStyle := true
 name := "scala-binance-api"
 
 version := "0.0.2-SNAPSHOT"
-organization := "io.github.patceev"
+organization := "io.github.antonlagankin"
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.8"
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-actor" % "2.5.21",
-  "com.typesafe.akka" %% "akka-http" % "10.1.7",
-  "com.typesafe.akka" %% "akka-stream" % "2.5.21",
-  "io.circe" %% "circe-core" % "0.10.0",
-  "io.circe" %% "circe-generic" % "0.10.0",
-  "io.circe" %% "circe-parser" % "0.10.0",
-  "com.beachape" %% "enumeratum-circe" % "1.5.10",
-  "org.scalatest" % "scalatest_2.12" % "3.0.5" % "test",
+  "com.typesafe.akka" %% "akka-actor" % "2.6.19",
+  "com.typesafe.akka" %% "akka-http" % "10.2.9",
+  "com.typesafe.akka" %% "akka-stream" % "2.6.19",
+  "io.circe" %% "circe-core" % "0.15.0-M1",
+  "io.circe" %% "circe-generic" % "0.15.0-M1",
+  "io.circe" %% "circe-parser" % "0.15.0-M1",
+  "com.beachape" %% "enumeratum-circe" % "1.7.0",
+  "org.scalatest" %% "scalatest" % "3.3.0-SNAP3" % Test,
   "com.typesafe" % "config" % "1.3.4"
 )
