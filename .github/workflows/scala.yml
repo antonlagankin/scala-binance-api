@@ -22,6 +22,15 @@ jobs:
       run: sbt test
     - name: Run package
       run: sbt package
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: target/scala-2.13/scala-binance-api_2.13-0.0.2-SNAPSHOT.jar 
+        asset_name: mything
+        tag: ${{ github.ref }}
+        overwrite: true
+        body: "This is my release text"
     - name: release
       uses: actions/create-release@v1
       id: create_release
