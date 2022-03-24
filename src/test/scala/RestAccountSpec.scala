@@ -4,7 +4,7 @@ import com.typesafe.config.{Config, ConfigFactory}
 import io.github.patceev.binance.models.BinanceError
 import io.github.patceev.binance.models.enums._
 import io.github.patceev.binance.{BinanceConfiguration, BinanceRestAPI}
-import org.scalatest.AsyncFlatSpec
+import org.scalatest.flatspec.AsyncFlatSpec
 
 import scala.concurrent.ExecutionContext
 
